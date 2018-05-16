@@ -8,6 +8,13 @@ For a fun filled afternoon:
 
 For a lot of junk:
 
-`cat /dev/null`
+```bash
+sudo rm /dev/null
+sudo mknod /dev/null c 1 3
+sudo chmod 666 /dev/null
+head /dev/null
+cat /dev/null
+cat /dev/null > le0 # from Frank Ortune
+```
 
-look at `man mknod` to see how to make nods, like `null`.
+to fix it, repeat but with `c 3 2` as arguments to `mknod` and make sure your bitbucket is empty.
